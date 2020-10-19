@@ -3,10 +3,13 @@ import Squad  from '../images/squad.jpg'
 
 function Home() {
     return (
-        <div>
+        <div className="homeWrapper" >
+            <div className="homeInnerWrapper" >
             <h1>I am the home page</h1>
-            <img src={Squad}/>
+            <img src={Squad} alt="Dexter's Crew" className="homeImage" />
         </div>
+        </div>
+        
     )
 }
 
