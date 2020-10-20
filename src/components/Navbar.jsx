@@ -2,11 +2,11 @@ import React from 'react'
 
 function Navbar() {
     return (
-        <div className="navBar" >
-            <ul>
-                <ul>home</ul>
-                <ul>Mandark</ul>
-                <ul>Dee Dee</ul>
+        <div >
+            <ul className="navBar" >
+                <li>home</li>
+                <li>Mandark</li>
+                <li>Dee Dee</li>
 
             </ul>
         </div>
