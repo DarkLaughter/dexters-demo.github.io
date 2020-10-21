@@ -1,15 +1,15 @@
 body {
+  padding: 0;
+  margin: 0;
   background-image: url("https://cn.i.cdn.ti-platform.com/content/1123/showpage/dexter%27s-laboratory/ae/dexterslab-backgroundbottom.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-size: 100% 100%;
-  overflow: scroll;
 }
 
 .container {
   height: 100vh;
-  width: 100vw;
   display: flex;
   flex-direction: column;
 }
@@ -17,13 +17,16 @@ body {
 .navBar {
   list-style-type: none;
   width: 100vw;
+  padding: 0px;
   overflow: hidden;
   display: flex;
   justify-content: space-evenly;
   background-color: #006277;
+  margin-top: -7px;
 }
+
 ul.navBar li {
-  margin: 15px;
+  margin: 20px;
   float: left;
 }
 
@@ -35,16 +38,8 @@ ul.navBar li a {
   padding: 14px 16px;
   text-decoration: none;
 }
-ul.nav li a {
-  display: block;
-  border-radius: 5px;
-  color: #a3cf65;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
 
-ul.nav li a:hover {
+ul.navBar li a:hover {
   background-color: white;
   color: #a3cf65;
 }
@@ -68,7 +63,7 @@ ul.nav li a:hover {
   padding: 20px 40px;
   border-radius: 10px;
   box-shadow: 0px 10px 50px #555;
-  background-color: #ffffff;
+  background-color: whitesmoke;
 }
 
 .homeImage {
