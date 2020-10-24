@@ -15,8 +15,8 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
-        <Route exact path="/Mandark" component={CategoriesPage}/>
-        {/* <Route exact path="" component={}/> */}
+        <Route exact path="/mandark" component={CategoriesPage}/>
+        <Route exact path="/deedee" component={CategoriesPage}/>
         <Route render={() => <NotFound />} />
         <Route />
       </Switch>

@@ -1,7 +1,10 @@
 import React from 'react'
 import Categories from './Categories'
+import { withRouter, useLocation } from 'react-router-dom'
 
-const CategoriesPage = () => {
+const CategoriesPage = (props) => {
+    let character = useLocation().pathname.slice(1)
+    console.log(character)
     return (
         <div className="categories">
             <Categories/>
@@ -14,4 +17,4 @@ const CategoriesPage = () => {
     )
 }
 
-export default CategoriesPage
+export default withRouter(CategoriesPage)

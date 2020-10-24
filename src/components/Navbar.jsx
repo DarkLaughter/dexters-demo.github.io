@@ -6,7 +6,7 @@ import Logo from "../images/dexterlogo.png";
 
 
 
-function Navbar() {
+const Navbar = () => {
     return (
         <div className="navBar" >
             <ul className="navBar" >
