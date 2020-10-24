@@ -1,11 +1,13 @@
 body {
   padding: 0;
   margin: 0;
-  background-image: url("https://cn.i.cdn.ti-platform.com/content/1123/showpage/dexter%27s-laboratory/ae/dexterslab-backgroundbottom.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("https://cn.i.cdn.ti-platform.com/content/1123/showpage/dexter%27s-laboratory/ae/dexterslab-backgroundbottom.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   background-size: 100% 100%;
+  font-family: "Orbitron", sans-serif;
 }
 
 .container {
@@ -16,7 +18,7 @@ body {
 
 .navBar {
   list-style-type: none;
-  width: 100vw;
+  width: 100%;
   padding: 0px;
   overflow: hidden;
   display: flex;
@@ -30,6 +32,11 @@ ul.navBar li {
   float: left;
 }
 
+ul.navBar img {
+  height: 80px;
+  padding-top: 30px;
+}
+
 ul.navBar li a {
   display: block;
   border-radius: 5px;
@@ -37,6 +44,7 @@ ul.navBar li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  margin-top: 20px;
 }
 
 ul.navBar li a:hover {
@@ -68,4 +76,24 @@ ul.navBar li a:hover {
 
 .homeImage {
   height: 60%;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  height: 100%;
+  justify-content: flex-start;
+  overflow: scroll;
+}
+
+.categoriesRow {
+  display: flex;
+  border: 2px solid rgb(33, 50, 148);
+  border-radius: 10px;
+  background-color: rgb(223, 220, 215);
+  opacity: 0.92;
+  margin: 20px;
+  padding: 20px;
+  height: 150px;
 }

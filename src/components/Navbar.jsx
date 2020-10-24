@@ -1,13 +1,26 @@
 import React from 'react'
+import { NavLink, withRouter } from 'react-router-dom'
+
+import Dexter from "../images/dex.png";
+import Logo from "../images/dexterlogo.png";
+
+
 
 function Navbar() {
     return (
         <div className="navBar" >
             <ul className="navBar" >
-                <li>home</li>
-                <li>Mandark</li>
-                <li>Dee Dee</li>
-
+                <img src={Dexter} alt="Dexter" />
+                <img src={Logo} alt="Moogle" />
+                <li>
+                    <NavLink to="/mandark">Mandark's Quiz</NavLink>
+                </li>
+                <li>
+                <NavLink to="/deedee">Mandark's Quiz</NavLink>
+                </li>
+                <li>
+                <NavLink to="/home">Mandark's Quiz</NavLink>
+                </li>
             </ul>
         </div>
     )
@@ -15,4 +28,4 @@ function Navbar() {
 
 
 
-export default Navbar
+export default withRouter(Navbar)

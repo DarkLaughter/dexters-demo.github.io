@@ -1,13 +1,25 @@
 import React from "react";
-import Home from "./components/Home";
+import { Route, Switch } from 'react-router-dom'
+
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import NotFound from './components/NotFound';
+import CategoriesPage from './components/CategoriesPage';
+
 import "./app.css";
 
 function App() {
   return (
     <div className="container" >
-      <Navbar/>
-      <Home/>
+      <style>@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Ranchers&display=swap');</style>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/Mandark" component={CategoriesPage}/>
+        {/* <Route exact path="" component={}/> */}
+        <Route render={() => <NotFound />} />
+        <Route />
+      </Switch>
     </div>
   );
 }
