@@ -4,7 +4,6 @@ import { withRouter, useLocation } from 'react-router-dom'
 
 const CategoriesPage = (props) => {
     let character = useLocation().pathname.slice(1)
-    console.log(character)
     return (
         <div className="categories">
             <Categories/>
